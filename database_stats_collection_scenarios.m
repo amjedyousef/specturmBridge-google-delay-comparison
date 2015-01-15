@@ -24,7 +24,7 @@ ftsz=16;
 
 %%
 %Path to save files (select your own)
-my_path='';
+my_path='/home/amjed/Documents/Gproject/workspace/data/WSDB_DATA';
 
 %%
 %General querying parameters
@@ -56,9 +56,9 @@ if delay_distribution_area==1
     longitude_start=str2num(WSDB_data{1}.longitude); %Start of the spectrum scanning trajectory
     longitude_end=str2num(WSDB_data{2}.longitude); %End of spectrum scanning trajectory
     
-    longitude_interval=100;
+    longitude_interval=10;
     longitude_step=(longitude_end-longitude_start)/longitude_interval;
-    no_queries=20; %Number of queries per individual location
+    no_queries=2; %Number of queries per individual location
     
     delay_google=[];
     delay_spectrumbridge=[];
@@ -81,7 +81,6 @@ if delay_distribution_area==1
             latitude=WSDB_data{1}.latitude;
             longitude=num2str(xx);
             
-            instant_clock=clock; %Save clock for file name (if both WSDBs are queried)
             if google_test==1
                 %Query Google
                 fprintf('Google\n')

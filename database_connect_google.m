@@ -24,10 +24,10 @@ device_type='"MODE_2"'; %Types of TVWS device: http://en.wikipedia.org/wiki/TV-b
 
  if counter<1e3
     fprintf('key 1\n');
-    key='""'; %API [replace by your own]
+    key='"AIzaSyCb2KmhGWPd6jYqIUXEqSObD6ORHQ8toQQ"'; %API [replace by your own]
  elseif 1e3<=counter && counter<2e3
     fprintf('key 2\n');
-    key='""'; %API [replace by your own]
+    key='"AIzaSyCtRwDLeP8iUl-f4k8xeUPpUt6jYkDBir4"'; %API [replace by your own]
  end
 %%
 

@@ -17,7 +17,7 @@ error=false; %Default error value
 %%
 %Query constants
 
-SBI_ID=''; %FCC ID [replace by your own]
+SBI_ID='TUDELFT'; %FCC ID [replace by your own]
 SBI_SN='101'; %Device serial number; Set of possible serial numbers [101,102,103,104,105];
 SBI_CC='US'; %Country code
 server_url_base='https://tvws-demo.spectrumbridge.com/v3';
